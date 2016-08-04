@@ -55,7 +55,7 @@ Router::get( '/user/:anyName', function( $username ){
 
 use Bonita\Router;
 
-Router::get( '/id/?:anyName:#([0-9]+})#', function( $id ){
+Router::get( '/id/?:anyName:#^([0-9]+)$#', function( $id ){
   echo "ID number is: $id";
 });
 ```

@@ -14,7 +14,7 @@ namespace Bonita;
 *	@package Bonita
 *	@version 1.0
 *	@author Najmuddin Mohammed <najmuddin.mohammed@hotmail.com>
-*	@copyright (c) Bonita 2016 <boninta-source.com>
+*	@copyright (c) Bonita 2016 <bonita-source.com>
 */
 
 class Router{

@@ -10,4 +10,4 @@ NO | YES
 
 use Bonita major packages | independent
 ------------ | -------------
-NO | YES
+NO  | YES

@@ -48,7 +48,7 @@ Router::get( '/user/:anyName', function( $username ){
   echo "welcome to $username's page";
 });
 ```
-### dynamic page declaration with regular expression
+### dynamic page declaration with regular expression. Pattern: **#^([0-9]+)$#**
 
 ```
 <?

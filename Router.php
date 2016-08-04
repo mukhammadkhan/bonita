@@ -54,16 +54,38 @@ class Router{
 	*/
 
 	protected static $uri = null;
+
+	/**
+	*	any.
+	*
+	*	@return callback
+	*/
+	
+	public static function any( string $pattern = null, $callback = null ){
+
+		return ( !is_null( $pattern ) & is_callable( $callback ) ) ? static::set_route( $pattern, $callback ) : false;
+	}
 	
 	/**
-	*	version.
+	*	get.
 	*
-	*	@return string
+	*	@return callback
 	*/
 	
 	public static function get( string $pattern = null, $callback = null ){
-		
-		if( empty( $pattern ) | !is_callable( $callback ) ) return false;
+
+		return ( 'GET' === $_SERVER['REQUEST_METHOD'] ) ? ( !is_null( $pattern ) & is_callable( $callback ) ) ? static::set_route( $pattern, $callback ) : false : false;
+	}
+
+	/**
+	*	post.
+	*
+	*	@return callback
+	*/
+	
+	public static function post( string $pattern = null, $callback = null ){
+
+		return ( 'POST' === $_SERVER['REQUEST_METHOD'] ) ? ( !is_null( $pattern ) & is_callable( $callback ) ) ? static::set_route( $pattern, $callback ) : false : false;
 	}
 
 	/**

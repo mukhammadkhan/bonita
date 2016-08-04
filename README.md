@@ -12,7 +12,7 @@ use Bonita major packages | independent
 ------------ | -------------
 NO  | YES
 
-**Supported methods
+**Supported methods**
 
 GET | POST
 ------------ | -------------

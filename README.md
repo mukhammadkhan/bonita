@@ -4,10 +4,6 @@
 
 Requirement:
 
-- [x] PHP 7.0.x
-- [ ] PHP 5
-- 
-First Header | Second Header
+PHP 5 | PHP 7
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+NO | YES

@@ -17,9 +17,9 @@ Router::get( '/user/:name', function( $username ){
 	echo "welcome to " .ucfirst( $username ) . "'s page!";
 });
 
-# use regular experssion (pattern: #^([a-z-]+)([0-9]{4})$#i)
+# using regular experssion. pattern: #^([a-z-]+)([0-9]{4})$#i
 
-# ! regex starting with "?" character
+# regex starting with "?" on declaration
 
 Router::get( '/id/?:patternName:#^([a-z-]+)([0-9]{4})$#i', function( $id ){
 

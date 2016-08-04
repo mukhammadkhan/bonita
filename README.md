@@ -11,3 +11,9 @@ NO | YES
 use Bonita major packages | independent
 ------------ | -------------
 NO  | YES
+
+**Supported methods
+
+GET | POST
+------------ | -------------
+YES  | YES

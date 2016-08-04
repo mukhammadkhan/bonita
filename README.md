@@ -19,3 +19,14 @@ YES  | YES
 GET | POST
 ------------ | -------------
 YES  | YES
+
+## How to use?
+
+```
+<?
+
+use Bonita\Router;
+
+Router::get( '/', function(){
+  echo 'welcome to our site';
+});

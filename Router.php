@@ -54,6 +54,17 @@ class Router{
 	*/
 
 	protected static $uri = null;
+	
+	/**
+	*	version.
+	*
+	*	@return string
+	*/
+	
+	public static function get( string $pattern = null, $callback = null ){
+		
+		if( empty( $pattern ) | !is_callable( $callback ) ) return false;
+	}
 
 	/**
 	*	version.

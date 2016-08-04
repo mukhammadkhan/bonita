@@ -17,7 +17,7 @@ namespace Bonita;
 *	@copyright (c) Bonita 2016 <boninta-source.com>
 */
 
-class Route{
+class Router{
 
 	/**
 	*	@var const

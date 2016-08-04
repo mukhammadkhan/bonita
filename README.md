@@ -22,11 +22,29 @@ YES  | YES
 
 ## How to use?
 
+### simple declaration for home and about pages
+
 ```
 <?
 
 use Bonita\Router;
 
 Router::get( '/', function(){
-  echo 'welcome to our site';
+  echo 'welcome to our site!';
 });
+
+Router::get( '/about', function(){
+  echo 'This is our company.';
+});
+```
+### dynamic page declaration
+
+```
+<?
+
+use Bonita\Router;
+
+Router::get( '/user/:anyName', function( $username ){
+  echo "welcome to $username's page";
+});
+```

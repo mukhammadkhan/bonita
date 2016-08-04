@@ -48,3 +48,14 @@ Router::get( '/user/:anyName', function( $username ){
   echo "welcome to $username's page";
 });
 ```
+### dynamic page declaration with regular expression
+
+```
+<?
+
+use Bonita\Router;
+
+Router::get( '/id/?:anyName:#([0-9]+})#', function( $id ){
+  echo "ID number is: $id";
+});
+```

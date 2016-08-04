@@ -48,7 +48,7 @@ Router::get( '/user/:anyName', function( $username ){
   echo "welcome to $username's page";
 });
 ```
-### dynamic page declaration with regular expression. Pattern: **#^([0-9]+)$#**
+### dynamic page declaration with regular expression. Pattern: #^([0-9]+)$#
 
 ```
 <?
@@ -56,6 +56,12 @@ Router::get( '/user/:anyName', function( $username ){
 use Bonita\Router;
 
 Router::get( '/id/?:anyName:#^([0-9]+)$#', function( $id ){
+  echo "ID number is: $id";
+});
+
+# or empty name
+
+Router::get( '/id/?::#^([0-9]+)$#', function( $id ){
   echo "ID number is: $id";
 });
 ```

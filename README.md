@@ -8,4 +8,6 @@ Bonita packages
 
 use Bonita\Router;
 
-Router::route();
+Router::get( '/', function(){
+  echo 'Home page';
+});
